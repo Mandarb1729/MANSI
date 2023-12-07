@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+
+    
+<meta
+ 
+charset="UTF-8">
+
+    
+<meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+
+    
+<title>MANSI Sign Up</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .signup-container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .signup-form {
+            padding: 20px;
+        }
+
+        .signup-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .signup-form button {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>MANSI Sign Up</h2>
+
+    <form action="/verification" class="signup-form" method="post">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="countryCode">Country Code:</label>
+        <select name="countryCode" id="countryCode" required>
+            <option value="">Select Country Code</option>
+            <option value="+1">+1 (US, Canada)</option>
+            <option value="+44">+44 (UK)</option>
+            <option value="+91">+91 (India)</option>
+            <option value="+61">+61 (Australia)</option>
+            <option value="+86">+86 (China)</option>
+        </select>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <small>Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.</small>
+
+        <label
+ 
+for="confirmPassword">Confirm Password:</label>
+
+        
+<input
+ 
+type="password"
+ 
+id="confirmPassword"
+ 
+name="confirmPassword"
+ 
+required>
+
+
+        
+<a href="verification.html"></a><button type="submit">Create Account</button></a>
+<div class="log-in-link">Already have an account?
+    <a href="login.html">Log-In</a>
+</div>    
+</form>
+</div>
+
+  <br><br><br>
+  <footer>
+    <p>&copy; 2023 MANSI. All rights reserved.</p>
+  </footer>  
+</body>
+</html>

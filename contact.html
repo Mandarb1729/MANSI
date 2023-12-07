@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <header>
+        <img src="mansi-high-resolution-logo-transparent.png" alt="Your Logo" alt="mansi-high-resolution-logo-transparent" width="150" height="150">
+        <h1>MANSI:Mathematical and Statistical Interface</h1>
+        <br>
+        <style>
+          body {
+              margin: 5;
+              padding: 5;
+              font-family: 'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace;
+             
+              overflow-x: hidden;
+          }
+    
+          /* Add your existing styles here */
+    
+          /* Vertical menu styles */
+          .vertical-menu {
+              width: 200px;
+              position: fixed;
+              left: -200px;
+              top: 0;
+              height: 100%;
+              background-color: #333;
+              padding-top: 20px;
+              transition: 0.5s;
+          }
+    
+          .vertical-menu a {
+              padding: 10px;
+              text-decoration: none;
+              font-size: 18px;
+              color: #fff;
+              display: block;
+              transition: 0.3s;
+          }
+    
+          .vertical-menu a:hover {
+              background-color: #00abf0;
+              color: #000;
+          }
+    
+          /* Menu button styles */
+          #menu-btn {
+              font-size: 30px;
+              cursor: pointer;
+              position: fixed;
+              left: 20px;
+              top: 20px;
+              z-index: 2;
+          }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Vertical Menu -->
+      <div class="vertical-menu" id="vertical-menu">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="howto.html">How to Use</a>
+          <a href="login.html">Login</a><a href="signup.html">sign-up</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+    
+      <!-- Menu Button -->
+      <div id="menu-btn">&#9776;</div>
+    
+      <!-- Your Existing Content Goes Here -->
+    
+      <script>
+          // JavaScript for showing/hiding the menu
+          document.getElementById('menu-btn').addEventListener('click', function () {
+              var verticalMenu = document.getElementById('vertical-menu');
+              if (verticalMenu.style.left === '0px') {
+                  verticalMenu.style.left = '-200px';
+              } else {
+                  verticalMenu.style.left = '0px';
+              }
+          });
+      </script>
+    <style>
+      body {
+        font-family:'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace ;
+      }
+    
+      header {
+        display: flex;
+        align-items: center;
+      }
+    
+      h1 {
+        margin-left: 10px; /* Adjust the margin as needed */
+      }
+      img {
+        max-width: 100px; /* Adjust the maximum width of the logo as needed */
+        height: auto;
+      }
+    </style><br>
+        <p>Where Mathematics and Statistics embrace you</p>
+      </header>
+  <style>
+ .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00abf0;
+        }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+    }
+
+    form {
+        display: grid;
+        gap: 20px;
+    }
+
+    label {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #00abf0;
+    }
+</style> 
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <div class="contact-details">
+            <p><strong>Address:</strong> 123 Main Street, Cityville, Country</p>
+            <p><strong>Contact Number:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> info@example.com</p>
+        </div>
+
+        <div class="linkedin-link">
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">Your LinkedIn Profile</a></p>
+        </div>
+
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

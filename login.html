@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html
+ 
+lang="en">
+
+<head>
+
+    
+<meta
+ 
+charset="UTF-8">
+
+    
+<meta
+ 
+name="viewport"
+ 
+content="width=device-width, initial-scale=1.0">
+
+    
+<title >MANSI Login</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<header>
+    <img src="mansi-high-resolution-logo-transparent.png" alt="Your Logo" alt="mansi-high-resolution-logo-transparent" width="150" height="150">
+    <h1>MANSI:Mathematical and Statistical Interface</h1>
+    <br>
+    <style>
+      body {
+          margin: 5;
+          padding: 5;
+          font-family: 'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace;
+         
+          overflow-x: hidden;
+      }
+
+      /* Add your existing styles here */
+
+      /* Vertical menu styles */
+      .vertical-menu {
+          width: 200px;
+          position: fixed;
+          left: -200px;
+          top: 0;
+          height: 100%;
+          background-color: #333;
+          padding-top: 20px;
+          transition: 0.5s;
+      }
+
+      .vertical-menu a {
+          padding: 10px;
+          text-decoration: none;
+          font-size: 18px;
+          color: #fff;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .vertical-menu a:hover {
+          background-color: #00abf0;
+          color: #000;
+      }
+
+      /* Menu button styles */
+      #menu-btn {
+          font-size: 30px;
+          cursor: pointer;
+          position: fixed;
+          left: 20px;
+          top: 20px;
+          z-index: 2;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Vertical Menu -->
+  <div class="vertical-menu" id="vertical-menu">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="howto.html">How to Use</a>
+      <a href="login.html">Login</a><a href="signup.html">sign-up</a>
+      <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Menu Button -->
+  <div id="menu-btn">&#9776;</div>
+
+  <!-- Your Existing Content Goes Here -->
+
+  <script>
+      // JavaScript for showing/hiding the menu
+      document.getElementById('menu-btn').addEventListener('click', function () {
+          var verticalMenu = document.getElementById('vertical-menu');
+          if (verticalMenu.style.left === '0px') {
+              verticalMenu.style.left = '-200px';
+          } else {
+              verticalMenu.style.left = '0px';
+          }
+      });
+  </script>
+<style>
+  body {
+    font-family:'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace ;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  img {
+    max-width: 100px; /* Adjust the maximum width of the logo as needed */
+    height: auto;
+  }
+</style><br>
+    <p>Where Mathematics and Statistics embrace you</p>
+  </header>
+</head>
+<body>
+
+<div class="login-container">
+
+    <h2>Login</h2>
+
+    <form action="/dashboard" class="login-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="Mandar1729" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="Maths@1729" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="sign-up-link">
+        <a href="signup.html">Create Account</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 MANSI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

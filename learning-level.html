@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Selection Form
+    </title>
+    <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Course Selection Form</h1>
+
+    <form id="courseForm">
+        <label for="subject">Subject:</label>
+        <select id="subject" onchange="populateLevels()">
+            <option value="">Select Subject</option>
+            <option value="math">Mathematics</option>
+            <option value="stats">Statistics</option>
+        </select>
+
+        <label for="level">Learner Level:</label>
+        <select id="level" onchange="populatePapers()">
+            <option value="">Select Learner Level</option>
+        </select>
+
+        <label for="paper">Paper:</label>
+        <select id="paper" onchange="populateConcepts()">
+            <option value="">Select Paper</option>
+        </select>
+
+        <label for="concept">Concept:</label>
+        <select id="concept">
+            <option value="">Select Concept</option>
+        </select>
+
+        <button type="button" onclick="showSelectedCourses()">Next</button>
+    </form>
+
+    <div id="selectedCourses"></div>
+
+</body>
+</html>

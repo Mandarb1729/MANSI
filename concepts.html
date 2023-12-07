@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concepts</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Concepts</h1>
+
+  <form id="conceptsForm">
+    <div id="paperDropdown" style="display: none;">
+      <label for="paper">Paper (Sub field):</label>
+      <select id="paper" name="paper">
+        <option value="Arithmetic">Arithmetic</option>
+        <option value="Algebra">Algebra</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Trigonometry">Trigonometry</option>
+        <!-- Add other papers here based on the given data -->
+      </select>
+    </div>
+
+    <div id="conceptDropdown" style="display: none;">
+      <label for="concept">Concept (topic):</label>
+      <select id="concept" name="concept">
+        <option value="Number System, Operations with Integers, Fractions, Decimals, Exponents, Roots, Ratios & Proportions, Permutations & Combinations">Number System, Operations with Integers, Fractions, Decimals, Exponents, Roots, Ratios & Proportions, Permutations & Combinations</option>
+        <option value="Linear Equations, Quadratic Equations, Simultaneous Equations, Inequalities, Polynomials, Graphing, Functions, Exponents, Logarithms">Linear Equations, Quadratic Equations, Simultaneous Equations, Inequalities, Polynomials, Graphing, Functions, Exponents, Logarithms</option>
+        <option value="Basic Concepts, Angles, Lines, Triangles, Quadrilaterals, Circles, Mensuration">Basic Concepts, Angles, Lines, Triangles, Quadrilaterals, Circles, Mensuration</option>
+        <option value="Trigonometric Ratios, Identities, Applications">Trigonometric Ratios, Identities, Applications</option>
+        <!-- Add other concepts here based on the given data -->
+      </select>
+    </div>
+    
+    <button type="button" onclick="showConcepts()">Next</button>
+  </form>
+
+  <script>
+    function showConcepts() {
+      document.getElementById("paperDropdown").style.display = "block";
+    }
+
+    document.getElementById("paper").addEventListener("change", function() {
+      if (this.value) {
+        document.getElementById("conceptDropdown").style.display = "block";
+      }
+    });
+
+    document.getElementById("concept").addEventListener("change", function() {
+      if (this.value) {
+        // Handle the selected concept
+      }
+    });
+  </script>
+</body>
+</html>

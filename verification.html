@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Page</title>
+    <!-- Add your stylesheets and scripts here -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <h1>Email Verification</h1>
+
+        <!-- Email verification form -->
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" required>
+        <button onclick="verifyEmail()">Verify Email</button>
+
+        <h1>Contact Verification</h1>
+
+        <!-- Contact verification form -->
+        <label for="contactInput">Contact:</label>
+        <input type="tel" id="contactInput" required>
+        <button onclick="verifyContact()">Verify Contact</button>
+
+        <!-- Redirect to dashboard button -->
+        <button onclick="redirectToDashboard()" id="dashboardRedirectBtn" style="display: none;">Go to Dashboard</button>
+    </div>
+
+    <!-- Add your scripts here -->
+    <script>
+        // Add your JavaScript code here
+
+        function verifyEmail() {
+            // Add logic to verify the email
+            // For example, you can send a verification code to the email
+            // and check if the entered code is correct
+            console.log("Email verification logic");
+
+            // Show the redirect button after successful verification
+            document.getElementById('dashboardRedirectBtn').style.display = 'block';
+        }
+
+        function verifyContact() {
+            // Add logic to verify the contact
+            // For example, you can send an OTP to the contact
+            // and check if the entered OTP is correct
+            console.log("Contact verification logic");
+
+            // Show the redirect button after successful verification
+            document.getElementById('dashboardRedirectBtn').style.display = 'block';
+        }
+
+        function redirectToDashboard() {
+            // Add logic to navigate to the dashboard page
+            // For example, you can use window.location.href
+            console.log("Redirecting to the dashboard page");
+            window.location.href = "dashboard.html"; // Replace with your actual dashboard page URL
+        }
+    </script>
+<footer>
+    <p>&copy; 2023 MANSI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

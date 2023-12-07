@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANSI: How to Use</title>
+  <link rel="stylesheet" href="style.css">
+  <header>
+    <img src="mansi-high-resolution-logo-transparent.png" alt="Your Logo" alt="mansi-high-resolution-logo-transparent" width="150" height="150">
+    <h1>MANSI:Mathematical and Statistical Interface</h1>
+    <br>
+    <style>
+      body {
+          margin: 5;
+          padding: 5;
+          font-family: 'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace;
+         
+          overflow-x: hidden;
+      }
+
+      /* Add your existing styles here */
+
+      /* Vertical menu styles */
+      .vertical-menu {
+          width: 200px;
+          position: fixed;
+          left: -200px;
+          top: 0;
+          height: 100%;
+          background-color: #333;
+          padding-top: 20px;
+          transition: 0.5s;
+      }
+
+      .vertical-menu a {
+          padding: 10px;
+          text-decoration: none;
+          font-size: 18px;
+          color: #fff;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .vertical-menu a:hover {
+          background-color: #00abf0;
+          color: #000;
+      }
+
+      /* Menu button styles */
+      #menu-btn {
+          font-size: 30px;
+          cursor: pointer;
+          position: fixed;
+          left: 20px;
+          top: 20px;
+          z-index: 2;
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Vertical Menu -->
+  <div class="vertical-menu" id="vertical-menu">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="howto.html">How to Use</a>
+      <a href="login.html">Login</a><a href="signup.html">sign-up</a>
+      <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Menu Button -->
+  <div id="menu-btn">&#9776;</div>
+
+  <!-- Your Existing Content Goes Here -->
+
+  <script>
+      // JavaScript for showing/hiding the menu
+      document.getElementById('menu-btn').addEventListener('click', function () {
+          var verticalMenu = document.getElementById('vertical-menu');
+          if (verticalMenu.style.left === '0px') {
+              verticalMenu.style.left = '-200px';
+          } else {
+              verticalMenu.style.left = '0px';
+          }
+      });
+  </script>
+<style>
+  body {
+    font-family:'Cambria', 'Century Schoolbook', 'Georgia', 'Times New Roman', 'Courier New', monospace ;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+  img {
+    max-width: 100px; /* Adjust the maximum width of the logo as needed */
+    height: auto;
+  }
+</style><br>
+    <p>Where Mathematics and Statistics embrace you</p>
+  </header>
+</head>
+<body>
+<main>
+
+  <section id="getting-started">
+    <h2>Getting Started</h2>
+    <ol>
+      <li>
+        <h3>Create an Account</h3>
+        <p>Visit the MANSI website and click "Sign Up." Fill out the required information, create a unique username and password, and verify your account through email or SMS.</p>
+      </li>
+      <li>
+        <h3>Explore the Dashboard</h3>
+        <p>Once logged in, you'll be directed to your personalized dashboard. Explore the selection of modules, tools, and resources relevant to your learning level and interests. Use the search bar to find specific topics or subjects.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="choose-learning-path">
+    <h2>Choose Your Learning Path</h2>
+    <p>MANSI offers a wide range of learning modules covering various topics in mathematics and statistics. Each module is designed to be interactive and engaging, featuring:</p>
+
+    <ul>
+      <li>
+        <h3>Interactive lessons</h3>
+        <p>Learn through engaging and interactive lessons that explain key concepts and theories in a clear and concise manner.</p>
+      </li>
+      <li>
+        <h3>Practice problems</h3>
+        <p>Test your understanding and reinforce your learning with a variety of practice problems tailored to each module.</p>
+      </li>
+      <li>
+        <h3>Assessments</h3>
+        <p>Track your progress and identify areas for improvement through comprehensive assessments that evaluate your mastery of the material.</p>
+      </li>
+    </ul>
+
+    <p>Browse the modules and select those best suited to your individual goals and learning pace. You can always revisit previously completed modules or explore new topics as your knowledge expands.</p>
+  </section>
+
+  <section id="interactive-tools">
+    <h2>Interactive Tools to Enhance Your Learning</h2>
+    <p>MANSI goes beyond traditional learning methods by offering several AI-powered tools to enhance your learning experience:</p>
+
+    <ul>
+      <li>
+        <h3>MANDAR Chatbot</h3>
+        <p>Get personalized feedback and guidance on specific concepts and problems. Ask questions, clarify doubts, and receive tailored assistance from the AI-powered chatbot.</p>
+      </li>
+      <li>
+        <h3>AI-Generated Tests</h3>
+        <p>Generate customized exams based on your learning progress and areas needing improvement. Practice under realistic test conditions and identify areas requiring further study.</p>
+      </li>
+      <li>
+        <h3>LaTeX Note Generator</h3>
+        <p>Create beautiful and comprehensive notes for efficient revision. Generate LaTeX-formatted notes that capture key concepts, formulas, and diagrams for future reference.</p>
+      </li>
+    </ul>
+
+    <p>These interactive tools provide a personalized and dynamic learning experience, allowing you to learn at your own pace and maximize your understanding.</p>
+  </section>
+
+  <section id="engage-community">
+    <h2>Engage with the Community</h2>
+    <p>Learning doesn't have to be a solitary journey. Join the vibrant MANSI community forum and connect with other learners:</p>
+
+    <ul>
+      <li>
+        <h3>Discuss topics</h3>
+        <p>Participate in online discussions to gain different perspectives, share your knowledge, and learn from others.</p>
+      </li>
+      <li>
+        <h3>Ask questions</h3>
+        <p>Get help from fellow learners and experienced educators on specific topics or challenges you encounter.</p>
+      </li>
+      <li>
+        <h3>Collaborate on projects</h3>
+        <p>Work together on projects, share resources, and motivate each other in your learning journey.</p>
+      </li>
+    </ul>
+    <section id="track-progress">
+      <h2>Track Your Progress</h2>
+      <p>MANSI provides you with a personalized learning progress report that allows you to:</p>
+    
+      <ul>
+        <li>
+          <h3>Track completed modules</h3>
+          <p>Monitor your progress through the platform and see which modules you have completed.</p>
+        </li>
+        <li>
+          <h3>Review assessment scores</h3>
+          <p>Analyze your performance on assessments to identify areas of strength and weakness.</p>
+        </li>
+        <li>
+          <h3>Visualize learning progress</h3>
+          <p>Gain insights into your learning journey through interactive data visualizations.</p>
+        </li>
+      </ul>
+    
+      <p>By regularly reviewing your progress report, you can stay motivated, identify areas for improvement, and adjust your learning strategies accordingly.</p>
+    </section>
+    
+    <section id="additional-tips">
+      <h2>Additional Tips</h2>
+    
+      <ul>
+        <li>
+          <h3>Customize your learning experience</h3>
+          <p>MANSI allows you to personalize your learning journey by adjusting the difficulty level, language, and learning pace to suit your individual needs.</p>
+        </li>
+        <li>
+          <h3>Learn offline</h3>
+          <p>Download modules and resources for offline access, allowing you to learn without an internet connection.</p>
+        </li>
+        <li>
+          <h3>Explore the blog and social media</h3>
+          <p>Stay updated on the latest MANSI news, learning tips, and announcements by following the blog and social media channels.</p>
+        </li>
+      </ul>
+    
+      <p>MANSI offers a comprehensive and flexible learning platform designed to help you achieve your academic goals. By taking advantage of its diverse resources and engaging tools, you can unlock your full potential in mathematics and statistics.</p>
+    </section>
+    
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 MANSI. All rights reserved.</p>
+    </footer>
+    
+    </body>
+    </html>
+    

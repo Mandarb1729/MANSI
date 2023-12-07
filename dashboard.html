@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <h1>MANSI</h1>
+        <h2>Dashboard</h2>
+        <h2 id="userDashboardHeading"></h2>
+
+        <!-- Dropdowns -->
+        <label for="subjectDropdown">Subject:</label>
+        <select id="subjectDropdown">
+            <!-- Add subject options here -->
+            <option value="math_statistics">Mathematics</option>
+            <option value="math_statistics">Statistics</option>
+            <!-- Add more subjects as needed -->
+        </select>
+
+        <label for="levelDropdown">Level:</label>
+        <select id="levelDropdown">
+            <!-- Add level options here -->
+            <option value="school">School</option>
+            <option value="graduate">Graduate</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="doctoral">Doctoral</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <!-- Other form elements (Field, Unit, Concept) -->
+
+        <label for="fieldInput">Field:</label>
+        <input type="text" id="fieldInput">
+
+        <label for="unitInput">Unit:</label>
+        <input type="text" id="unitInput">
+
+        <label for="conceptInput">Concept:</label>
+        <input type="text" id="conceptInput">
+
+        <p>OR</p>
+
+        <!-- Search box with autocomplete -->
+        <label for="searchBox">Search:</label>
+        <input type="text" id="searchBox" placeholder="Type to search">
+
+        <!-- Next button -->
+        <button onclick="goToConceptPage()">Next</button>
+    </div>
+
+    <!-- Add your scripts here -->
+    <script>
+        // Add your JavaScript code here
+        document.getElementById('userDashboardHeading').innerText = `${getUserName()}'s Dashboard`;
+
+        function getUserName() {
+            // Add logic to get the user's first name
+            // For example, you can fetch it from your backend
+            return "John"; // Replace with actual user's first name
+        }
+
+        function goToConceptPage() {
+            // Add logic to navigate to the concept page
+            // For example, you can use window.location.href or an AJAX call
+            console.log("Navigating to the concept page");
+        }
+    </script>
+<footer>
+  <p>&copy; 2023 MANSI. All rights reserved.</p>
+</footer>
+</body>
+</html>
